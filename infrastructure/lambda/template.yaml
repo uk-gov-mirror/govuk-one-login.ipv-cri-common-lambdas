@@ -177,7 +177,7 @@ Globals:
                 !Ref Environment,
                 dynatraceSecretArn,
               ]
-        DT_CLUSTER_ID: !Sub
+        DT_CLUSTER: !Sub
           - "{{resolve:secretsmanager:${SecretArn}:SecretString:DT_CLUSTER_ID}}"
           - SecretArn:
               !FindInMap [
@@ -201,7 +201,6 @@ Globals:
                 !Ref Environment,
                 dynatraceSecretArn,
               ]
-        DT_OPEN_TELEMETRY_ENABLE_INTEGRATION: "true"
 
 
 Mappings:
