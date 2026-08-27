@@ -109,23 +109,6 @@
             }
           ],
           "file": ".github/workflows/scan-repo.yml",
-          "path": "$.jobs.sonarcloud-java"
-        },
-        {
-          "phase": "pre-merge",
-          "provider": "GitHub",
-          "checks": [
-            {
-              "name": "code style and linting"
-            },
-            {
-              "name": "unit test coverage"
-            },
-            {
-              "name": "vulnerability detection"
-            }
-          ],
-          "file": ".github/workflows/scan-repo.yml",
           "path": "$.jobs.sonarcloud-ts"
         },
         {
